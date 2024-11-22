@@ -5,6 +5,8 @@
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
 }
 
 .img2{
@@ -16,7 +18,14 @@
     color: whitesmoke;
     font-size: 22px;
 }
-
 .cor{
     background: var(--header);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+
+
 }
