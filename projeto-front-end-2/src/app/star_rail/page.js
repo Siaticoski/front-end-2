@@ -2,7 +2,7 @@ const star_rail = () => {
     return(
         <main>
             <h1>Pagina Star Rail</h1>
-            <p>Meu paragrafo</p>
+            <p>sim</p>
         </main>
     )
 }

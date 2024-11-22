@@ -8,20 +8,18 @@ export default function header (){
             <nav className={styles.nav}>
 
                 <ul className={styles.lista}>
+                    <Image src="/images/" alt="sim" width={80} height={80} />
                     <li className={styles.links}>
                         <Link className={styles.a} href='/'>Home</Link>
                     </li>
                     <li className={styles.links}>
-                        <Link className={styles.a} href="/star_rail">star rail</Link>
+                        <Link className={styles.a} href="/star_rail">Star Rail</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.a} href="/reliquia">Relíquia</Link>
                     </li>
                 </ul>
 
-
-                <ul className={styles.img2}>
-                    <p>
-                        <Image src="/images/star_rail.jpg" alt="sim" width={80} height={80} />
-                    </p>
-                </ul>
                 
                 
 
