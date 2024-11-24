@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Click</title>
+    <style>
+        #minhaDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="minhaDiv">Clique na imagem para esconder</div>
+<img src="img/pompom.png" alt="Imagem de Exemplo" id="minhaImagem">
+
+<script>
+    const minhaDiv = document.getElementById('minhaDiv');
+    const minhaImagem = document.getElementById('minhaImagem');
+
+    minhaImagem.addEventListener('click', function() {
+        if (minhaDiv.style.display === 'none') {
+            minhaDiv.style.display = 'flex'; // Se a div estiver escondida, mostra ela
+        } else {
+            minhaDiv.style.display = 'none'; // Se a div estiver visível, esconde ela
+        }
+    });
+</script>
+
+</body>
+</html>

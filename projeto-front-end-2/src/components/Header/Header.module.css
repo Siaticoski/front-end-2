@@ -9,6 +9,11 @@
     width: 700px;
 }
 
+.lista2{
+    width: 700px;
+    height: 60px;
+}
+
 .img2{
     display: flex;
     justify-content: right;
@@ -25,7 +30,36 @@
     justify-content: center;
 }
 
+.lista2{
+    display: none;
+}
+
 @media (max-width: 600px){
-
-
+    .lista{
+        display: none;
+    }
+    .lista2{
+        display: block;
+        justify-content: right;
+        align-items: center;
+        width: 600px;
+        height: auto;
+    }
+    .menu{
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .butao{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .arruma{
+        cursor: pointer;
+    }
 }

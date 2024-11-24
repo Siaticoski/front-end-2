@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão que Abre Menu</title>
+    <style>
+        #menu {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            position: absolute;
+        }
+        #menu.active {
+            display: block;
+        }
+        #menuButton{
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="menuButton"><img src="img/pompom.png" alt=""></button>
+    <div id="menu">
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
