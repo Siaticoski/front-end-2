@@ -6,6 +6,16 @@ import { useState } from "react"
 
 export default function header() {     
 
+    function menuShow() {
+        let ul = document.querySelector('.nav ul')
+        
+        if (ul.classList.contains("open")){
+            ul.classList.remove("open");
+        } else {
+            ul.classList.add("open");
+        }
+    }
+
     const [links, setlinks] = useState(true);
 
     
@@ -32,12 +42,14 @@ export default function header() {
 
                 <div className={styles.lista2}>
 
-                    <Image className={styles.arruma} src="/images/pompom.png" alt="sim" width={60} height={60}/>
+                    <div className={styles.icon_menu} onClick={menuShow}>
+                    <Image src="/images/pompom.png" alt="sim" width={60} height={60}/>
+                    </div>
 
                     <ul className={styles.menu}>
                         
                         <li className={styles.links}>
-                            <Link className={styles.a} href='/'></Link>
+                            <Link className={styles.a} href='/'>Home</Link>
                         </li>
 
                         <li className={styles.links}>
@@ -47,9 +59,9 @@ export default function header() {
                         <li>
                             <Link className={styles.a} href="/reliquia">Relíquia</Link>
                         </li>
+                        
 
                     </ul>
-
 
                 </div>
 

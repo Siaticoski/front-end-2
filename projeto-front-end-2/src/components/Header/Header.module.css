@@ -35,31 +35,32 @@
 }
 
 @media (max-width: 600px){
+    .cor{
+        display: flex;
+        justify-content: left;
+    }
     .lista{
         display: none;
     }
     .lista2{
-        display: block;
-        justify-content: right;
+        display: flex;
+        justify-content: left;
         align-items: center;
-        width: 600px;
+        width: auto;
         height: auto;
     }
-    .menu{
-        width: 200px;
-        height: 200px;
-        background-color: lightblue;
-        display: none;
-        justify-content: center;
+    .nav ul{
+        position: absolute;
+        background: cadetblue;
+        margin-top: 22%;
+        height: auto;
+        width: auto;
+        flex-direction: column;
         align-items: center;
-        margin: 20px;
+        text-decoration: none;
     }
-    .butao{
-        background: none;
-        border: none;
+    .icon_menu{
         cursor: pointer;
-    }
-    .arruma{
-        cursor: pointer;
+        display: block;
     }
 }
