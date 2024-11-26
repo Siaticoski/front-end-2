@@ -6,60 +6,46 @@ import { useState } from "react"
 
 export default function header() {     
 
-    function menuShow() {
-        let ul = document.querySelector('.nav ul')
-        
-        if (ul.classList.contains("open")){
-            ul.classList.remove("open");
-        } else {
-            ul.classList.add("open");
-        }
-    }
-
     const [links, setlinks] = useState(true);
 
     
     return (
 
         <header className={styles.cor}>
-            <nav className={styles.nav}>
 
-                <button className={styles.butao} onClick={()=>setlinks(!links)}>Image</button>          
+        <button className={styles.butao} onClick={()=>setlinks(!links)}><Image src="/images/menu.png" alt="sim" width={70} height={70}/></button>
 
-                    {links && (
-                        <ul className={styles.lista}>
+            {links && (
+                <nav className={styles.nav}>
 
-                            
-                            <Image src="/images/pompom.png" alt="sim" width={60} height={60} />
+                          
 
-                            <li className={styles.links}>
-                                <Link className={styles.a} href='/'>Home</Link>
-                            </li>
-                            <li className={styles.links}>
-                                <Link className={styles.a} href="/star_rail">Star Rail</Link>
-                            </li>
-                            <li>
-                                <Link className={styles.a} href="/reliquia">Relíquia</Link>
-                            </li>
-                        </ul>
-                    )}
+                
+                    <ul className={styles.lista}>
 
-               
+                        
+                        <Image className={styles.img} src="/images/pompom.png" alt="sim" width={60} height={60} />
 
-            </nav>
+                        <li className={styles.links}>
+                            <Link className={styles.a} href='/'>Home</Link>
+                        </li>
+                        <li className={styles.links}>
+                            <Link className={styles.a} href="/star_rail">Star Rail</Link>
+                        </li>
+                        <li>
+                            <Link className={styles.a} href="/reliquia">Relíquia</Link>
+                        </li>
+                    </ul>
+                
+
+           
+
+        </nav>
+            )}
+            
 
         </header>
     )
     
     
 }
-/*
- const butao = document.getElementById('butao');
-    const menu = document.getElementById('menu');
-    butao.forEach(butao => {
-        butao.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    });
-
-*/
