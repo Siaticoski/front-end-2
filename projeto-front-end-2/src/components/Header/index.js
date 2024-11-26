@@ -24,7 +24,7 @@ export default function header() {
         <header className={styles.cor}>
             <nav className={styles.nav}>
 
-                <button onClick={()=>setlinks(!links)}>Image</button>          
+                <button className={styles.butao} onClick={()=>setlinks(!links)}>Image</button>          
 
                     {links && (
                         <ul className={styles.lista}>
