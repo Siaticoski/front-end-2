@@ -22,10 +22,14 @@ export default function header() {
     return (
 
         <header className={styles.cor}>
-            <nav className={styles.nav}>          
+            <nav className={styles.nav}>
+
+                <button onClick={()=>setlinks(!links)}>Image</button>          
 
                     {links && (
                         <ul className={styles.lista}>
+
+                            
                             <Image src="/images/pompom.png" alt="sim" width={60} height={60} />
 
                             <li className={styles.links}>
@@ -40,30 +44,7 @@ export default function header() {
                         </ul>
                     )}
 
-                <div className={styles.lista2}>
-
-                    <div className={styles.icon_menu} onClick={menuShow}>
-                    <Image src="/images/pompom.png" alt="sim" width={60} height={60}/>
-                    </div>
-
-                    <ul className={styles.menu}>
-                        
-                        <li className={styles.links}>
-                            <Link className={styles.a} href='/'>Home</Link>
-                        </li>
-
-                        <li className={styles.links}>
-                            <Link className={styles.a} href="/star_rail">Star Rail</Link>
-                        </li>
-
-                        <li>
-                            <Link className={styles.a} href="/reliquia">Relíquia</Link>
-                        </li>
-                        
-
-                    </ul>
-
-                </div>
+               
 
             </nav>
 
