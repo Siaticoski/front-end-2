@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Div ao Clicar na Imagem</title>
+    <style>
+        #mensagem {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border: 1px solid #00796b;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="img/pompom.png" alt="Imagem de Exemplo" id="minhaImagem" style="cursor: pointer;">
+
+    <div id="mensagem">Você clicou na imagem!</div>
+
+    <script>
+        const imagem = document.getElementById('minhaImagem');
+        const mensagem = document.getElementById('mensagem');
+
+        imagem.addEventListener('click', function() {
+            mensagem.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
