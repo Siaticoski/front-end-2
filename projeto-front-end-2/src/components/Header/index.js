@@ -25,6 +25,9 @@ export default function Header() {
                     <li>
                         <Link className={styles.a} href="/reliquia">Relíquia</Link>
                     </li>
+                    <li>
+                        <Link className={styles.a} href="/listas">Listas</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
