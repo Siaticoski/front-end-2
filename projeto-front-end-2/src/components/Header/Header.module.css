@@ -50,7 +50,7 @@
         justify-content: left;
         flex-wrap: wrap;
         flex-direction: column;
-        height: 100px;
+        height: auto;
         width: 100px;
         align-items: center;
         margin-left: 5px;

@@ -28,6 +28,9 @@ export default function Header() {
                     <li>
                         <Link className={styles.a} href="/listas">Listas</Link>
                     </li>
+                    <li>
+                        <Link className={styles.a} href="/props">Props</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
