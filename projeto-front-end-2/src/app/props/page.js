@@ -47,7 +47,8 @@ export default function props() {
             {
                 carros.map((carro) => (
                 
-                <Card key={carro.id}
+                <Card 
+                    key={carro.id}
                     id={carro.id}
                     modelo={carro.modelo}
                     ano={carro.ano}

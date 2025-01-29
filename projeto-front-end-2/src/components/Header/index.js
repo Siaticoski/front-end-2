@@ -31,6 +31,9 @@ export default function Header() {
                     <li>
                         <Link className={styles.a} href="/props">Props</Link>
                     </li>
+                    <li>
+                        <Link className={styles.a} href="/filtro">Filtro</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
